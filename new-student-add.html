@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>শিক্ষার্থী রেজিস্ট্রেশন</title>
+  <title>শিক্ষার্থী যুক্ত করুন</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     body { font-family: 'Hind Siliguri', sans-serif; }
     .glass {
@@ -19,8 +20,8 @@
 </head>
 <body class="bg-gradient-to-tr from-blue-100 via-purple-100 to-pink-100 min-h-screen">
   <section class="flex justify-center items-center min-h-[60vh]">
-    <div class="glass p-10 w-full max-w-md mt-16">
-      <h2 class="text-xl font-extrabold mb-6 text-blue-700">শিক্ষার্থী রেজিস্ট্রেশন</h2>
+    <div class="glass p-8 w-full max-w-md mt-16">
+      <h2 class="text-xl font-extrabold mb-6 text-blue-700 flex items-center gap-2"><i class="fa-solid fa-user-plus"></i> শিক্ষার্থী যুক্ত করুন</h2>
       <form class="space-y-5">
         <input type="text" placeholder="নাম" class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-300 shadow"/>
         <input type="text" placeholder="মোবাইল নম্বর" class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-300 shadow"/>
@@ -32,11 +33,9 @@
           <option>ব্যাচ ২</option>
           <option disabled>সিট খালি নেই</option>
         </select>
-        <!-- সিট খালি না থাকলে নিচের লাইন দেখাও -->
-        <!-- <div class="text-red-500 text-sm">সিট খালি নেই</div> -->
-        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-xl font-bold shadow-lg hover:scale-105 hover:shadow-2xl transition">ভর্তি করো</button>
-        <a href="index.html" class="mt-4 w-full py-3 rounded-lg border border-blue-400 text-blue-700 font-bold text-lg text-center shadow hover:bg-blue-50 transition block">লগইন পেইজে ফিরে যান</a>
+        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-xl font-bold shadow-lg hover:scale-105 hover:shadow-2xl transition flex items-center justify-center gap-2"><i class="fa-solid fa-plus"></i> যুক্ত করুন</button>
       </form>
+      <a href="dashboard.html" class="mt-4 w-full py-3 rounded-lg border border-blue-400 text-blue-700 font-bold text-lg text-center shadow hover:bg-blue-50 transition block">ড্যাশবোর্ডে ফিরে যান</a>
     </div>
   </section>
 </body>
