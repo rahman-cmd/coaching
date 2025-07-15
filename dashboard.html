@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ড্যাশবোর্ড</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body { font-family: 'Hind Siliguri', sans-serif; }
+    .glass {
+      background: rgba(255,255,255,0.7);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-tr from-blue-100 via-purple-100 to-pink-100 min-h-screen">
+  <div class="flex min-h-screen">
+    <!-- Side Nav (Desktop Only) -->
+    <aside class="hidden md:flex w-64 bg-white/80 glass p-6 flex-col gap-4 shadow-lg">
+      <div class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 mb-8 flex items-center"><i class="fa-solid fa-graduation-cap mr-2"></i>কোচিং ম্যানেজমেন্ট</div>
+      <a href="dashboard.html" class="py-2 px-4 font-semibold text-blue-700 bg-blue-100 hover:bg-blue-200 transition flex items-center gap-2"><i class="fa-solid fa-chart-line"></i> ড্যাশবোর্ড</a>
+      <a href="student-attendance.html" class="py-2 px-4 font-semibold text-purple-700 hover:bg-purple-100 transition flex items-center gap-2"><i class="fa-solid fa-user-check"></i> শিক্ষার্থী হাজিরা</a>
+      <a href="batch-create.html" class="py-2 px-4 font-semibold text-green-700 hover:bg-green-100 transition flex items-center gap-2"><i class="fa-solid fa-layer-group"></i> ব্যাচ তৈরি</a>
+      <a href="student-registration.html" class="py-2 px-4 font-semibold text-pink-700 hover:bg-pink-100 transition flex items-center gap-2"><i class="fa-solid fa-user-plus"></i> শিক্ষার্থী রেজিস্ট্রেশন</a>
+      <a href="fee-collection.html" class="py-2 px-4 font-semibold text-yellow-700 hover:bg-yellow-100 transition flex items-center gap-2"><i class="fa-solid fa-money-bill-wave"></i> ফি কালেকশন</a>
+      <a href="student-portal.html" class="py-2 px-4 font-semibold text-indigo-700 hover:bg-indigo-100 transition flex items-center gap-2"><i class="fa-solid fa-user-graduate"></i> ছাত্র পোর্টাল</a>
+      <a href="notice.html" class="py-2 px-4 font-semibold text-red-700 hover:bg-red-100 transition flex items-center gap-2"><i class="fa-solid fa-bell"></i> নোটিশ</a>
+    </aside>
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col min-h-screen">
+      <!-- Top Header (Sticky) -->
+      <nav class="glass sticky top-0 z-20 w-full flex justify-between items-center px-4 md:px-8 py-4 shadow-md">
+        <div class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 flex items-center gap-2"><i class="fa-solid fa-chart-line"></i>ড্যাশবোর্ড</div>
+        <div class="flex gap-3">
+          <a href="notice.html" class="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-100 to-blue-200 text-blue-700 font-semibold shadow hover:scale-105 hover:shadow-lg transition flex items-center gap-2"><i class="fa-solid fa-bell"></i> <span class="hidden sm:inline">নোটিশ</span></a>
+          <button class="px-4 py-2 rounded-lg bg-gradient-to-r from-green-100 to-green-200 text-green-700 font-semibold shadow hover:scale-105 hover:shadow-lg transition flex items-center gap-2"><i class="fa-solid fa-user"></i> <span class="hidden sm:inline">প্রোফাইল</span></button>
+          <button class="px-4 py-2 rounded-lg bg-gradient-to-r from-pink-100 to-pink-200 text-pink-700 font-semibold shadow hover:scale-105 hover:shadow-lg transition flex items-center gap-2"><i class="fa-solid fa-right-from-bracket"></i> <span class="hidden sm:inline">লগআউট</span></button>
+        </div>
+      </nav>
+      <!-- ড্যাশবোর্ড কার্ড -->
+      <div class="w-full px-1 sm:px-3 md:px-6 mt-8 mb-16 md:mb-0 grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
+        <div class="glass rounded-xl p-2 md:p-4 flex flex-col items-center group transition hover:scale-105 hover:shadow-2xl cursor-pointer">
+          <div class="bg-gradient-to-tr from-blue-400 to-blue-600 p-3 md:p-4 rounded-full mb-3 md:mb-4 shadow-lg group-hover:rotate-6 transition">
+            <i class="fa-solid fa-sack-dollar text-white text-2xl md:text-3xl"></i>
+          </div>
+          <div class="text-xs md:text-base font-semibold text-blue-700">মোট আয়</div>
+          <div class="text-lg md:text-3xl font-extrabold text-blue-600 mt-1 md:mt-2 tracking-wider">২৫,০০০৳</div>
+        </div>
+        <div class="glass rounded-xl p-2 md:p-4 flex flex-col items-center group transition hover:scale-105 hover:shadow-2xl cursor-pointer">
+          <div class="bg-gradient-to-tr from-green-400 to-green-600 p-3 md:p-4 rounded-full mb-3 md:mb-4 shadow-lg group-hover:-rotate-6 transition">
+            <i class="fa-solid fa-users text-white text-2xl md:text-3xl"></i>
+          </div>
+          <div class="text-xs md:text-base font-semibold text-green-700">মোট ছাত্র</div>
+          <div class="text-lg md:text-3xl font-extrabold text-green-600 mt-1 md:mt-2 tracking-wider">৮০</div>
+        </div>
+        <div class="glass rounded-xl p-2 md:p-4 flex flex-col items-center group transition hover:scale-105 hover:shadow-2xl cursor-pointer">
+          <div class="bg-gradient-to-tr from-yellow-400 to-yellow-600 p-3 md:p-4 rounded-full mb-3 md:mb-4 shadow-lg group-hover:rotate-12 transition">
+            <i class="fa-solid fa-layer-group text-white text-2xl md:text-3xl"></i>
+          </div>
+          <div class="text-xs md:text-base font-semibold text-yellow-700">মোট ব্যাচ</div>
+          <div class="text-lg md:text-3xl font-extrabold text-yellow-600 mt-1 md:mt-2 tracking-wider">৫</div>
+        </div>
+        <div class="glass rounded-xl p-2 md:p-4 flex flex-col items-center group transition hover:scale-105 hover:shadow-2xl cursor-pointer">
+          <div class="bg-gradient-to-tr from-pink-400 to-pink-600 p-3 md:p-4 rounded-full mb-3 md:mb-4 shadow-lg group-hover:-rotate-12 transition">
+            <i class="fa-solid fa-user-check text-white text-2xl md:text-3xl"></i>
+          </div>
+          <div class="text-xs md:text-base font-semibold text-pink-700">আজকের উপস্থিতি</div>
+          <div class="text-lg md:text-3xl font-extrabold text-pink-600 mt-1 md:mt-2 tracking-wider">৭২</div>
+        </div>
+        <!-- এই মাসে ফি দিয়েছে -->
+        <div class="glass rounded-xl p-2 md:p-4 flex flex-col items-center group transition hover:scale-105 hover:shadow-2xl cursor-pointer">
+          <div class="bg-gradient-to-tr from-green-300 to-green-500 p-3 md:p-4 rounded-full mb-3 md:mb-4 shadow-lg group-hover:rotate-6 transition">
+            <i class="fa-solid fa-circle-check text-white text-2xl md:text-3xl"></i>
+          </div>
+          <div class="text-xs md:text-base font-semibold text-green-700">এই মাসে ফি দিয়েছে</div>
+          <div class="text-lg md:text-3xl font-extrabold text-green-600 mt-1 md:mt-2 tracking-wider">৬৫</div>
+        </div>
+        <!-- এই মাসে ফি দেয়নি -->
+        <div class="glass rounded-xl p-2 md:p-4 flex flex-col items-center group transition hover:scale-105 hover:shadow-2xl cursor-pointer">
+          <div class="bg-gradient-to-tr from-red-400 to-red-600 p-3 md:p-4 rounded-full mb-3 md:mb-4 shadow-lg group-hover:rotate-6 transition">
+            <i class="fa-solid fa-circle-xmark text-white text-2xl md:text-3xl"></i>
+          </div>
+          <div class="text-xs md:text-base font-semibold text-red-700">এই মাসে ফি দেয়নি</div>
+          <div class="text-lg md:text-3xl font-extrabold text-red-600 mt-1 md:mt-2 tracking-wider">১৫</div>
+        </div>
+      </div>
+      <!-- Bottom Nav (Mobile Only) -->
+      <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 glass flex md:hidden w-full h-16 border-t border-gray-200 shadow-lg">
+        <a href="dashboard.html" class="flex-1 flex flex-col items-center justify-center text-blue-600 font-semibold min-w-0 px-0 py-0"><i class="fa-solid fa-chart-line text-xl"></i><span class="text-xs truncate">ড্যাশবোর্ড</span></a>
+        <a href="student-attendance.html" class="flex-1 flex flex-col items-center justify-center text-purple-600 font-semibold min-w-0 px-0 py-0"><i class="fa-solid fa-user-check text-xl"></i><span class="text-xs truncate">হাজিরা</span></a>
+        <a href="batch-create.html" class="flex-1 flex flex-col items-center justify-center text-green-600 font-semibold min-w-0 px-0 py-0"><i class="fa-solid fa-layer-group text-xl"></i><span class="text-xs truncate">ব্যাচ</span></a>
+        <a href="student-registration.html" class="flex-1 flex flex-col items-center justify-center text-pink-600 font-semibold min-w-0 px-0 py-0"><i class="fa-solid fa-user-plus text-xl"></i><span class="text-xs truncate">রেজি.</span></a>
+      </nav>
+    </main>
+  </div>
+</body>
+</html> 

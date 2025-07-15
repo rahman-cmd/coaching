@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>কোচিং ফি কালেকশন</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Hind Siliguri', sans-serif; }
+    .glass {
+      background: rgba(255,255,255,0.7);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+      backdrop-filter: blur(8px);
+      border-radius: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-tr from-blue-100 via-purple-100 to-pink-100 min-h-screen">
+  <section class="max-w-2xl mx-auto mt-16 glass p-10">
+    <h2 class="text-xl font-extrabold mb-6 text-blue-700">কোচিং ফি কালেকশন</h2>
+    <form class="space-y-5">
+      <input type="text" placeholder="ছাত্রের নাম দিয়ে সার্চ করুন" class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-300 shadow"/>
+      <div class="flex flex-col md:flex-row gap-4">
+        <input type="text" value="ব্যাচ: বিজ্ঞান" readonly class="w-full border rounded-lg px-4 py-3 bg-gray-100"/>
+        <input type="text" value="বকেয়া ফি: ৫০০৳" readonly class="w-full border rounded-lg px-4 py-3 bg-gray-100"/>
+        <button type="button" class="bg-gradient-to-r from-green-500 to-green-700 text-white px-6 py-3 rounded-xl font-bold shadow-lg hover:scale-105 hover:shadow-2xl transition">ফি জমা দাও</button>
+      </div>
+      <div class="flex gap-4">
+        <select class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-300 shadow">
+          <option>মাস নির্বাচন করুন</option>
+          <option>জানুয়ারি</option>
+          <option>ফেব্রুয়ারি</option>
+          <option>মার্চ</option>
+        </select>
+        <input type="number" placeholder="পরিমাণ" class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-300 shadow"/>
+      </div>
+      <div class="flex gap-4">
+        <select class="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-300 shadow">
+          <option>পেমেন্ট পদ্ধতি</option>
+          <option>ক্যাশ</option>
+          <option>বিকাশ</option>
+          <option>নগদ</option>
+        </select>
+      </div>
+      <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-xl font-bold shadow-lg hover:scale-105 hover:shadow-2xl transition">সাবমিট ফি</button>
+    </form>
+  </section>
+</body>
+</html> 
